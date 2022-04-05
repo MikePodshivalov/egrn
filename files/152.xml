@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="https://portal.rosreestr.ru/xsl/EGRP/Reestr_Extract_Big/OKS/07/Common.xsl"?>
+
+<KVOKS xmlns="urn://x-artefacts-rosreestr-ru/outgoing/kvoks/3.0.1"
+xmlns:smev="urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1"
+xmlns:num="urn://x-artefacts-rosreestr-ru/commons/complex-types/numbers/1.0"
+xmlns:adrs="urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/4.0.1"
+xmlns:spa="urn://x-artefacts-rosreestr-ru/commons/complex-types/entity-spatial/5.0.1"
+xmlns:param="urn://x-artefacts-rosreestr-ru/commons/complex-types/parameters-oks/2.0.1"
+xmlns:cer="urn://x-artefacts-rosreestr-ru/commons/complex-types/certification-doc/1.0"
+xmlns:doc="urn://x-artefacts-rosreestr-ru/commons/complex-types/document-output/4.0.1"
+xmlns:ch="urn://x-artefacts-rosreestr-ru/commons/complex-types/cultural-heritage/2.0.1">
+<Realty>
+<Construction CadastralNumber="40:27:040101:152" State="01"
+DateCreated="2014-01-21"
+>
+<CadastralBlocks>
+<CadastralBlock>40:27:040101</CadastralBlock>
+</CadastralBlocks>
+<ObjectType>002001004000</ObjectType>
+<ParentCadastralNumbers>
+<CadastralNumber>40:27:040101:296</CadastralNumber>
+</ParentCadastralNumbers>
+<OldNumbers>
+<num:OldNumber Type="01" Number="1" />
+<num:OldNumber Type="02" Number="40-40-27/001/2008-488" />
+</OldNumbers>
+<Name>Промышленные площадки и дорога</Name>
+<AssignationName>9. иные сооружения производственного назначения</AssignationName>
+<KeyParameters>
+<param:KeyParameter Type="05" Value="16334" />
+</KeyParameters>
+<Address>
+<adrs:OKATO>29415000000</adrs:OKATO>
+<adrs:KLADR>40000002000007900</adrs:KLADR>
+<adrs:Region>40</adrs:Region>
+<adrs:City Name="Обнинск" Type="г" />
+<adrs:Street Name="Киевское" Type="ш" />
+<adrs:Level1 Type="д" Value="100" />
+<adrs:Note>Калужская область, г.Обнинск, Киевское шоссе, 100</adrs:Note>
+</Address>
+<CadastralCost Value="67936209.46" Unit="383" />
+<EntitySpatial EntSys="ID0" >
+<spa:SpatialElement >
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="1" >
+<spa:Ordinate X="500171.2" Y="1324098.37" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="2" >
+<spa:Ordinate X="500163.08" Y="1324176.52" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="3" >
+<spa:Ordinate X="500155.31" Y="1324229.89" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="4" >
+<spa:Ordinate X="500117.93" Y="1324223.88" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="5" >
+<spa:Ordinate X="500092.94" Y="1324382.28" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="6" >
+<spa:Ordinate X="500088.84" Y="1324382.43" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="7" >
+<spa:Ordinate X="500085.08" Y="1324383.68" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="8" >
+<spa:Ordinate X="500081.61" Y="1324386.96" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="9" >
+<spa:Ordinate X="500079.97" Y="1324390.63" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="10" >
+<spa:Ordinate X="500078.17" Y="1324397.51" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="11" >
+<spa:Ordinate X="500067.31" Y="1324438.55" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="12" >
+<spa:Ordinate X="500068.22" Y="1324442.35" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="13" >
+<spa:Ordinate X="500071.16" Y="1324445.18" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="14" >
+<spa:Ordinate X="500094.77" Y="1324451.72" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="15" >
+<spa:Ordinate X="500095.22" Y="1324449.84" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="16" >
+<spa:Ordinate X="500116.21" Y="1324455.38" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="17" >
+<spa:Ordinate X="500113.9" Y="1324463.89" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="18" >
+<spa:Ordinate X="500104.59" Y="1324461.52" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="19" >
+<spa:Ordinate X="500095.56" Y="1324494.42" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="20" >
+<spa:Ordinate X="500059.35" Y="1324485.02" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="21" >
+<spa:Ordinate X="500060.13" Y="1324480.92" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="22" >
+<spa:Ordinate X="500087.66" Y="1324488.25" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="23" >
+<spa:Ordinate X="500091.46" Y="1324487.86" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="24" >
+<spa:Ordinate X="500094.05" Y="1324484.82" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="25" >
+<spa:Ordinate X="500099.89" Y="1324463.43" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="26" >
+<spa:Ordinate X="500099.98" Y="1324461.17" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="27" >
+<spa:Ordinate X="500097.85" Y="1324459.12" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="28" >
+<spa:Ordinate X="500086.57" Y="1324456.12" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="29" >
+<spa:Ordinate X="500086.99" Y="1324454.39" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="30" >
+<spa:Ordinate X="500070.33" Y="1324450.01" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="31" >
+<spa:Ordinate X="500065.34" Y="1324451.12" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="32" >
+<spa:Ordinate X="500062.9" Y="1324454.28" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="33" >
+<spa:Ordinate X="500058.16" Y="1324472.39" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="34" >
+<spa:Ordinate X="500057.87" Y="1324478.87" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="35" >
+<spa:Ordinate X="500060.1" Y="1324480.88" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="36" >
+<spa:Ordinate X="500059.31" Y="1324485.03" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="37" >
+<spa:Ordinate X="500055.94" Y="1324485.75" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="38" >
+<spa:Ordinate X="500054.12" Y="1324487.42" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="39" >
+<spa:Ordinate X="500037.42" Y="1324549.03" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="40" >
+<spa:Ordinate X="500027.36" Y="1324555.89" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="41" >
+<spa:Ordinate X="500023.21" Y="1324554.89" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="42" >
+<spa:Ordinate X="500126.37" Y="1324168.59" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="43" >
+<spa:Ordinate X="500086.95" Y="1324158.07" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="44" >
+<spa:Ordinate X="500096.95" Y="1324121.5" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="45" >
+<spa:Ordinate X="500068.46" Y="1324115.16" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="46" >
+<spa:Ordinate X="500073.49" Y="1324101.98" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="47" >
+<spa:Ordinate X="500169.92" Y="1324097.04" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="1" >
+<spa:Ordinate X="500171.2" Y="1324098.37" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+</spa:SpatialElement>
+<spa:SpatialElement >
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="1" >
+<spa:Ordinate X="499866.49" Y="1324558.5" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="2" >
+<spa:Ordinate X="499864.06" Y="1324567.75" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="3" >
+<spa:Ordinate X="499858.36" Y="1324566.23" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="4" >
+<spa:Ordinate X="499856.27" Y="1324566.31" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="5" >
+<spa:Ordinate X="499853.89" Y="1324567.29" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="6" >
+<spa:Ordinate X="499852.23" Y="1324569.27" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="7" >
+<spa:Ordinate X="499849.43" Y="1324579" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="8" >
+<spa:Ordinate X="499849.91" Y="1324582.05" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="9" >
+<spa:Ordinate X="499852.73" Y="1324584.83" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="10" >
+<spa:Ordinate X="499859.81" Y="1324586.54" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="11" >
+<spa:Ordinate X="499863.81" Y="1324583.77" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="12" >
+<spa:Ordinate X="499862.32" Y="1324591.14" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="13" >
+<spa:Ordinate X="499861.67" Y="1324593.97" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="14" >
+<spa:Ordinate X="499798.02" Y="1324576.1" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="15" >
+<spa:Ordinate X="499795.06" Y="1324575.31" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="16" >
+<spa:Ordinate X="499791.89" Y="1324575.44" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="17" >
+<spa:Ordinate X="499789.24" Y="1324576.53" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="18" >
+<spa:Ordinate X="499786.83" Y="1324578.27" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="19" >
+<spa:Ordinate X="499784.68" Y="1324580.51" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="20" >
+<spa:Ordinate X="499790.77" Y="1324559.2" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="21" >
+<spa:Ordinate X="499791.08" Y="1324562.44" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="22" >
+<spa:Ordinate X="499791.79" Y="1324565.15" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="23" >
+<spa:Ordinate X="499793.54" Y="1324567.61" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="24" >
+<spa:Ordinate X="499796.11" Y="1324569.35" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="25" >
+<spa:Ordinate X="499798.72" Y="1324568.98" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="26" >
+<spa:Ordinate X="499800.72" Y="1324566.6" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="27" >
+<spa:Ordinate X="499805.8" Y="1324547.93" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="28" >
+<spa:Ordinate X="499856.52" Y="1324561.57" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="29" >
+<spa:Ordinate X="499859.31" Y="1324561.22" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="30" >
+<spa:Ordinate X="499861.34" Y="1324559.75" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="31" >
+<spa:Ordinate X="499862.92" Y="1324557.42" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="1" >
+<spa:Ordinate X="499866.49" Y="1324558.5" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+</spa:SpatialElement>
+</EntitySpatial>
+<Notes> Сведения о назначении имеют статус «Актуальные незасвидетельствованные». Право (ограничение права, обременение объекта недвижимости) зарегистрировано на данный объект недвижимости с назначениием отсутствует.</Notes>
+</Construction>
+</Realty>
+<CertificationDoc>
+<cer:Organization>ФГИС ЕГРН</cer:Organization>
+<cer:Date>2021-11-29</cer:Date>
+<cer:Number>99/2021/434399902</cer:Number>
+</CertificationDoc>
+<Contractors>
+<Contractor >
+<FamilyName>Щеглов</FamilyName>
+<FirstName>Дмитрий</FirstName>
+<Patronymic>Георгиевич</Patronymic>
+<NCertificate>40-10-60</NCertificate>
+</Contractor>
+</Contractors>
+<CoordSystems>
+<spa:CoordSystem Name="МСК-05" CsId="ID0" />
+</CoordSystems>
+<eDocument CodeType="112" Version="07" Scope="GKN">
+<Sender Kod="00.0.4.195"
+Name="ФГИС ЕГРН"
+Region="99"
+Date_Upload="2021-11-29"
+Appointment="Государственный регистратор"
+/>
+<Recipient Kod="00.0.4.111" Name="ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ &quot;ЛИЗИНГОВАЯ КОМПАНИЯ &quot;ФИНСЕРВИС ЛИЗИНГ&quot; ИНН 7804601438" />
+</eDocument>
+<ReestrExtract>
+<DeclarAttribute ID_KUVI="0"
+ExtractTypeCode="012000"
+ExtractTypeText="Выписка из Единого государственного реестра недвижимости об объекте недвижимости"
+ExtractNumber="99/2021/434399902"
+ExtractDate="29.11.2021"
+RequeryNumber="80-216037236"
+RequeryDate="29.11.2021"
+ExtractCount="1"
+NoticeCount="0"
+RefuseCount="0"
+Registrator="ФГИС ЕГРН">
+<ReceivName>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ &quot;ЛИЗИНГОВАЯ КОМПАНИЯ &quot;ФИНСЕРВИС ЛИЗИНГ&quot; ИНН 7804601438</ReceivName>
+<ReceivAdress>не указан</ReceivAdress>
+</DeclarAttribute>
+<ExtractObjectRight>
+<HeadContent>
+<ID_REC_KUVI>0</ID_REC_KUVI>
+<Title>ФЕДЕРАЛЬНАЯ СЛУЖБА ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ, КАДАСТРА И КАРТОГРАФИИ</Title>
+<DeptName>ФГИС ЕГРН</DeptName>
+<ExtractTitle>Выписка из Единого государственного реестра недвижимости об объекте недвижимости</ExtractTitle>
+<Content>На основании запроса от 29.11.2021 г., поступившего на рассмотрение 29.11.2021 г., сообщаем, что согласно записям Единого государственного реестра недвижимости:</Content>
+</HeadContent>
+<ExtractObject>
+<ObjectRight>
+<Right RightNumber="1">
+<Owner >
+<ID_Subject>310423621240</ID_Subject>
+<Organization>
+<Code_SP>007002000000</Code_SP>
+<Content>Общество с ограниченной ответственностью &quot;Венталл&quot;, ИНН: 4025007580</Content>
+<Name>Общество с ограниченной ответственностью &quot;Венталл&quot;</Name>
+<INN>4025007580</INN>
+</Organization>
+</Owner>
+<Registration >
+<ID_Record>310423620240</ID_Record>
+<RegNumber>40-40-27/001/2008-488</RegNumber>
+<Type>001001000000</Type>
+<Name>Собственность, № 40-40-27/001/2008-488 от 16.04.2008</Name>
+<RegDate>16.04.2008</RegDate>
+</Registration>
+<Encumbrance>
+<ID_Record>310423621440</ID_Record>
+<RegNumber>40:27:040101:152-40/011/2019-1</RegNumber>
+<Type>022007000000</Type>
+<Name>Ипотека</Name>
+<RegDate>11.12.2019</RegDate>
+<Duration>
+<Started>07.11.2019</Started>
+<Stopped>24.10.2022</Stopped>
+<Term>с 07.11.2019 по 24.10.2022</Term>
+</Duration>
+<Owner >
+<ID_Subject>310423621640</ID_Subject>
+<Organization>
+<Code_SP>007002000000</Code_SP>
+<Content>Акционерное общество &quot;Банк Финсервис&quot;, ИНН: 7750004270</Content>
+<Name>Акционерное общество &quot;Банк Финсервис&quot;</Name>
+<INN>7750004270</INN>
+</Organization>
+</Owner>
+</Encumbrance>
+<Encumbrance>
+<ID_Record>310423622640</ID_Record>
+<RegNumber>40:27:040101:152-40/011/2019-3</RegNumber>
+<Type>022007000000</Type>
+<Name>Ипотека</Name>
+<RegDate>13.12.2019</RegDate>
+<Duration>
+<Started>12.07.2019</Started>
+<Stopped>01.07.2021</Stopped>
+<Term>с 12.07.2019 по 01.07.2021</Term>
+</Duration>
+<Owner >
+<ID_Subject>310423623240</ID_Subject>
+<Organization>
+<Code_SP>007002000000</Code_SP>
+<Content>Акционерное общество &quot;Банк Финсервис&quot;, ИНН: 7750004270</Content>
+<Name>Акционерное общество &quot;Банк Финсервис&quot;</Name>
+<INN>7750004270</INN>
+</Organization>
+</Owner>
+<DocFound>
+<ID_Document>310423622840</ID_Document>
+<Content>&apos;Договор об ипотеке&apos; №06/353/19 от 02.07.2019</Content>
+<Type_Document>010003006000</Type_Document>
+<Name>Договор об ипотеке</Name>
+<Number>06/353/19</Number>
+<Date>02.07.2019</Date>
+</DocFound>
+<DocFound>
+<ID_Document>310423623040</ID_Document>
+<Content>&apos;Дополнительное соглашение к Договору об ипотеке № 06/353/19, заключенному 02 июля 2019 года в г. Москве&apos; №1 от 29.11.2019</Content>
+<Type_Document>010004000000</Type_Document>
+<Name>Дополнительное соглашение к Договору об ипотеке № 06/353/19, заключенному 02 июля 2019 года в г. Москве</Name>
+<Number>1</Number>
+<Date>29.11.2019</Date>
+</DocFound>
+</Encumbrance>
+<Encumbrance>
+<ID_Record>310423624040</ID_Record>
+<RegNumber>40:27:040101:152-40/104/2020-5</RegNumber>
+<Type>022007000000</Type>
+<Name>Ипотека</Name>
+<RegDate>07.08.2020</RegDate>
+<Duration>
+<Started>07.08.2020</Started>
+<Stopped>21.07.2023</Stopped>
+</Duration>
+<Owner >
+<ID_Subject>310423624440</ID_Subject>
+<Organization>
+<Code_SP>007002000000</Code_SP>
+<Content>Акционерное общество &quot;Банк Финсервис&quot;, ИНН: 7750004270</Content>
+<Name>Акционерное общество &quot;Банк Финсервис&quot;</Name>
+<INN>7750004270</INN>
+</Organization>
+</Owner>
+<DocFound>
+<ID_Document>310423624240</ID_Document>
+<Content>&apos;Договор о последующей ипотеке&apos; №06/306/20 от 23.07.2020</Content>
+<Type_Document>010003006000</Type_Document>
+<Name>Договор о последующей ипотеке</Name>
+<Number>06/306/20</Number>
+<Date>23.07.2020</Date>
+</DocFound>
+</Encumbrance>
+<Encumbrance>
+<ID_Record>310423621840</ID_Record>
+<RegNumber>40:27:040101:152-40/011/2019-2</RegNumber>
+<Type>022007000000</Type>
+<Name>Ипотека</Name>
+<RegDate>12.12.2019</RegDate>
+<Duration>
+<Started>12.07.2019</Started>
+<Stopped>11.01.2021</Stopped>
+<Term>с 12.07.2019 по 11.01.2021</Term>
+</Duration>
+<Owner >
+<ID_Subject>310423622440</ID_Subject>
+<Organization>
+<Code_SP>007002000000</Code_SP>
+<Content>Акционерное общество &quot;Банк Финсервис&quot;, ИНН: 7750004270</Content>
+<Name>Акционерное общество &quot;Банк Финсервис&quot;</Name>
+<INN>7750004270</INN>
+</Organization>
+</Owner>
+<DocFound>
+<ID_Document>310423622040</ID_Document>
+<Content>&apos;Договор о последующей ипотеке&apos; №06/401/19 от 02.07.2019</Content>
+<Type_Document>010003006000</Type_Document>
+<Name>Договор о последующей ипотеке</Name>
+<Number>06/401/19</Number>
+<Date>02.07.2019</Date>
+</DocFound>
+<DocFound>
+<ID_Document>310423622240</ID_Document>
+<Content>&apos;Дополнительное соглашение к Договору о последующей ипотеке № 06/401/19, заключенному 02 июля 2019 года в г. Москве&apos; №1 от 29.11.2019</Content>
+<Type_Document>010004000000</Type_Document>
+<Name>Дополнительное соглашение к Договору о последующей ипотеке № 06/401/19, заключенному 02 июля 2019 года в г. Москве</Name>
+<Number>1</Number>
+<Date>29.11.2019</Date>
+</DocFound>
+</Encumbrance>
+<Encumbrance>
+<ID_Record>310423623440</ID_Record>
+<RegNumber>40:27:040101:152-40/104/2020-4</RegNumber>
+<Type>022007000000</Type>
+<Name>Ипотека</Name>
+<RegDate>07.08.2020</RegDate>
+<Duration>
+<Started>07.08.2020</Started>
+<Stopped>21.07.2023</Stopped>
+</Duration>
+<Owner >
+<ID_Subject>310423623840</ID_Subject>
+<Organization>
+<Code_SP>007002000000</Code_SP>
+<Content>Акционерное общество &quot;Банк Финсервис&quot;, ИНН: 7750004270</Content>
+<Name>Акционерное общество &quot;Банк Финсервис&quot;</Name>
+<INN>7750004270</INN>
+</Organization>
+</Owner>
+<DocFound>
+<ID_Document>310423623640</ID_Document>
+<Content>&apos;Договор о последующей ипотеке&apos; №06/303/20 от 23.07.2020</Content>
+<Type_Document>010003006000</Type_Document>
+<Name>Договор о последующей ипотеке</Name>
+<Number>06/303/20</Number>
+<Date>23.07.2020</Date>
+</DocFound>
+</Encumbrance>
+</Right>
+<NoShareHolding>не зарегистрировано</NoShareHolding>
+</ObjectRight>
+<RightAssert>данные отсутствуют</RightAssert>
+<RightClaim>данные отсутствуют</RightClaim>
+<RightAgainst>данные отсутствуют</RightAgainst>
+<RightSteal>данные отсутствуют</RightSteal>
+<WithoutThirdParty>данные отсутствуют</WithoutThirdParty>
+<InabilityRegWithoutOwner></InabilityRegWithoutOwner>
+<InabilityRegZU></InabilityRegZU>
+</ExtractObject>
+<InfoENK/>
+<InfoPIK/>
+<FootContent>
+<Recipient>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ &quot;ЛИЗИНГОВАЯ КОМПАНИЯ &quot;ФИНСЕРВИС ЛИЗИНГ&quot; ИНН 7804601438</Recipient>
+<ExtractDate>29.11.2021</ExtractDate>
+<Content></Content>
+</FootContent>
+</ExtractObjectRight>
+</ReestrExtract>
+</KVOKS>

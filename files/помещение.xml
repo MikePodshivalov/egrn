@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="https://portal.rosreestr.ru/xsl/EGRP/Reestr_Extract_Big/ROOM/07/Common.xsl"?>
+
+<KPOKS xmlns="urn://x-artefacts-rosreestr-ru/outgoing/kpoks/4.0.1"
+xmlns:smev="urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1"
+xmlns:num="urn://x-artefacts-rosreestr-ru/commons/complex-types/numbers/1.0"
+xmlns:adrs="urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/4.0.1"
+xmlns:spa="urn://x-artefacts-rosreestr-ru/commons/complex-types/entity-spatial/5.0.1"
+xmlns:param="urn://x-artefacts-rosreestr-ru/commons/complex-types/parameters-oks/2.0.1"
+xmlns:cer="urn://x-artefacts-rosreestr-ru/commons/complex-types/certification-doc/1.0"
+xmlns:doc="urn://x-artefacts-rosreestr-ru/commons/complex-types/document-output/4.0.1"
+xmlns:flat="urn://x-artefacts-rosreestr-ru/commons/complex-types/assignation-flat/1.0.1"
+xmlns:ch="urn://x-artefacts-rosreestr-ru/commons/complex-types/cultural-heritage/2.0.1">
+<Realty>
+<Flat CadastralNumber="40:27:040101:253" State="01"
+DateCreated="2014-02-19"
+>
+<CadastralBlock>40:27:040101</CadastralBlock>
+<ObjectType>002001003000</ObjectType>
+<OldNumbers>
+<num:OldNumber Type="03" Number="40:27:040101:0036:3033/ВТ:1000" />
+</OldNumbers>
+<Assignation>
+<flat:AssignationCode>206001000000</flat:AssignationCode>
+<flat:TotalAssets>false</flat:TotalAssets>
+</Assignation>
+<Area>766</Area>
+<Address>
+<adrs:OKATO>29415000000</adrs:OKATO>
+<adrs:KLADR>40000002000007900</adrs:KLADR>
+<adrs:Region>40</adrs:Region>
+<adrs:City Name="Обнинск" Type="г" />
+<adrs:Street Name="Киевское" Type="ш" />
+<adrs:Level1 Type="д" Value="100" />
+<adrs:Other>Муниципальная промышленная зона</adrs:Other>
+<adrs:Note>Калужская область, г.Обнинск, Муниципальная промышленная зона, Киевское шоссе, 100</adrs:Note>
+</Address>
+<CadastralCost Value="12146216.88" Unit="383" />
+</Flat>
+</Realty>
+<CertificationDoc>
+<cer:Organization>ФГИС ЕГРН</cer:Organization>
+<cer:Date>2021-11-29</cer:Date>
+<cer:Number>99/2021/434426172</cer:Number>
+</CertificationDoc>
+<CoordSystems>
+<spa:CoordSystem Name="МСК-05" CsId="ID0" />
+</CoordSystems>
+<eDocument CodeType="112" Version="07" Scope="GKN">
+<Sender Kod="00.0.4.195"
+Name="ФГИС ЕГРН"
+Region="99"
+Date_Upload="2021-11-29"
+Appointment="Государственный регистратор"
+/>
+<Recipient Kod="00.0.4.111" Name="ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ &quot;ЛИЗИНГОВАЯ КОМПАНИЯ &quot;ФИНСЕРВИС ЛИЗИНГ&quot; ИНН 7804601438" />
+</eDocument>
+<ReestrExtract>
+<DeclarAttribute ID_KUVI="0"
+ExtractTypeCode="012000"
+ExtractTypeText="Выписка из Единого государственного реестра недвижимости об объекте недвижимости"
+ExtractNumber="99/2021/434426172"
+ExtractDate="29.11.2021"
+RequeryNumber="80-216057035"
+RequeryDate="29.11.2021"
+ExtractCount="1"
+NoticeCount="0"
+RefuseCount="0"
+Registrator="ФГИС ЕГРН">
+<ReceivName>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ &quot;ЛИЗИНГОВАЯ КОМПАНИЯ &quot;ФИНСЕРВИС ЛИЗИНГ&quot; ИНН 7804601438</ReceivName>
+<ReceivAdress>не указан</ReceivAdress>
+</DeclarAttribute>
+<ExtractObjectRight>
+<HeadContent>
+<ID_REC_KUVI>0</ID_REC_KUVI>
+<Title>ФЕДЕРАЛЬНАЯ СЛУЖБА ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ, КАДАСТРА И КАРТОГРАФИИ</Title>
+<DeptName>ФГИС ЕГРН</DeptName>
+<ExtractTitle>Выписка из Единого государственного реестра недвижимости об объекте недвижимости</ExtractTitle>
+<Content>На основании запроса от 29.11.2021 г., поступившего на рассмотрение 29.11.2021 г., сообщаем, что согласно записям Единого государственного реестра недвижимости:</Content>
+</HeadContent>
+<ExtractObject>
+<ObjectRight>
+<Right RightNumber="1">
+<Owner >
+<ID_Subject>304425912640</ID_Subject>
+<Organization>
+<Code_SP>007002000000</Code_SP>
+<Content>Общество с ограниченной ответственностью &quot;Венталл&quot;, ИНН: 4025007580</Content>
+<Name>Общество с ограниченной ответственностью &quot;Венталл&quot;</Name>
+<INN>4025007580</INN>
+</Organization>
+</Owner>
+<Registration >
+<ID_Record>304425911240</ID_Record>
+<RegNumber>40-40-27/033/2006-490</RegNumber>
+<Type>001001000000</Type>
+<Name>Собственность, № 40-40-27/033/2006-490 от 13.10.2006</Name>
+<RegDate>13.10.2006</RegDate>
+</Registration>
+<Encumbrance>
+<ID_Record>304425914440</ID_Record>
+<RegNumber>40:27:040101:253-40/011/2019-1</RegNumber>
+<Type>022007000000</Type>
+<Name>Ипотека</Name>
+<RegDate>11.12.2019</RegDate>
+<Duration>
+<Started>07.11.2019</Started>
+<Stopped>24.10.2022</Stopped>
+<Term>с 07.11.2019 по 24.10.2022</Term>
+</Duration>
+<Owner >
+<ID_Subject>304425914840</ID_Subject>
+<Organization>
+<Code_SP>007002000000</Code_SP>
+<Content>Акционерное общество &quot;Банк Финсервис&quot;, ИНН: 7750004270</Content>
+<Name>Акционерное общество &quot;Банк Финсервис&quot;</Name>
+<INN>7750004270</INN>
+</Organization>
+</Owner>
+</Encumbrance>
+<Encumbrance>
+<ID_Record>304425913040</ID_Record>
+<RegNumber>40:27:040101:253-40/011/2019-2</RegNumber>
+<Type>022007000000</Type>
+<Name>Ипотека</Name>
+<RegDate>12.12.2019</RegDate>
+<Duration>
+<Started>12.07.2019</Started>
+<Stopped>11.01.2021</Stopped>
+<Term>с 12.07.2019 по 11.01.2021</Term>
+</Duration>
+<Owner >
+<ID_Subject>304425914040</ID_Subject>
+<Organization>
+<Code_SP>007002000000</Code_SP>
+<Content>Акционерное общество &quot;Банк Финсервис&quot;, ИНН: 7750004270</Content>
+<Name>Акционерное общество &quot;Банк Финсервис&quot;</Name>
+<INN>7750004270</INN>
+</Organization>
+</Owner>
+<DocFound>
+<ID_Document>304425913340</ID_Document>
+<Content>&apos;Договор о последующей ипотеке&apos; №06/401/19 от 02.07.2019</Content>
+<Type_Document>010003006000</Type_Document>
+<Name>Договор о последующей ипотеке</Name>
+<Number>06/401/19</Number>
+<Date>02.07.2019</Date>
+</DocFound>
+<DocFound>
+<ID_Document>304425913540</ID_Document>
+<Content>&apos;Дополнительное соглашение к Договору о последующей ипотеке № 06/401/19, заключенному 02 июля 2019 года в г. Москве&apos; №1 от 29.11.2019</Content>
+<Type_Document>010004000000</Type_Document>
+<Name>Дополнительное соглашение к Договору о последующей ипотеке № 06/401/19, заключенному 02 июля 2019 года в г. Москве</Name>
+<Number>1</Number>
+<Date>29.11.2019</Date>
+</DocFound>
+</Encumbrance>
+<Encumbrance>
+<ID_Record>304425916740</ID_Record>
+<RegNumber>40:27:040101:253-40/104/2020-5</RegNumber>
+<Type>022007000000</Type>
+<Name>Ипотека</Name>
+<RegDate>07.08.2020</RegDate>
+<Duration>
+<Started>07.08.2020</Started>
+<Stopped>21.07.2023</Stopped>
+</Duration>
+<Owner >
+<ID_Subject>304425917140</ID_Subject>
+<Organization>
+<Code_SP>007002000000</Code_SP>
+<Content>Акционерное общество &quot;Банк Финсервис&quot;, ИНН: 7750004270</Content>
+<Name>Акционерное общество &quot;Банк Финсервис&quot;</Name>
+<INN>7750004270</INN>
+</Organization>
+</Owner>
+<DocFound>
+<ID_Document>304425916940</ID_Document>
+<Content>&apos;Договор о последующей ипотеке&apos; №06/306/20 от 23.07.2020</Content>
+<Type_Document>010003006000</Type_Document>
+<Name>Договор о последующей ипотеке</Name>
+<Number>06/306/20</Number>
+<Date>23.07.2020</Date>
+</DocFound>
+</Encumbrance>
+<Encumbrance>
+<ID_Record>304425915240</ID_Record>
+<RegNumber>40:27:040101:253-40/011/2019-3</RegNumber>
+<Type>022007000000</Type>
+<Name>Ипотека</Name>
+<RegDate>13.12.2019</RegDate>
+<Duration>
+<Started>12.07.2019</Started>
+<Stopped>01.07.2021</Stopped>
+<Term>с 12.07.2019 по 01.07.2021</Term>
+</Duration>
+<Owner >
+<ID_Subject>304425915940</ID_Subject>
+<Organization>
+<Code_SP>007002000000</Code_SP>
+<Content>Акционерное общество &quot;Банк Финсервис&quot;, ИНН: 7750004270</Content>
+<Name>Акционерное общество &quot;Банк Финсервис&quot;</Name>
+<INN>7750004270</INN>
+</Organization>
+</Owner>
+<DocFound>
+<ID_Document>304425915540</ID_Document>
+<Content>&apos;Договор об ипотеке&apos; №06/353/19 от 02.07.2019</Content>
+<Type_Document>010003006000</Type_Document>
+<Name>Договор об ипотеке</Name>
+<Number>06/353/19</Number>
+<Date>02.07.2019</Date>
+</DocFound>
+<DocFound>
+<ID_Document>304425915740</ID_Document>
+<Content>&apos;Дополнительное соглашение к Договору об ипотеке № 06/353/19, заключенному 02 июля 2019 года в г. Москве&apos; №1 от 29.11.2019</Content>
+<Type_Document>010004000000</Type_Document>
+<Name>Дополнительное соглашение к Договору об ипотеке № 06/353/19, заключенному 02 июля 2019 года в г. Москве</Name>
+<Number>1</Number>
+<Date>29.11.2019</Date>
+</DocFound>
+</Encumbrance>
+</Right>
+<Right RightNumber="2">
+<NoOwner>данные о правообладателе отсутствуют</NoOwner>
+<NoRegistration>не зарегистрировано</NoRegistration>
+<Encumbrance>
+<ID_Record>304425916140</ID_Record>
+<RegNumber>40:27:040101:253-40/104/2020-4</RegNumber>
+<Type>022007000000</Type>
+<Name>Ипотека</Name>
+<RegDate>07.08.2020</RegDate>
+<Duration>
+<Started>07.08.2020</Started>
+<Stopped>21.07.2023</Stopped>
+</Duration>
+<Owner >
+<ID_Subject>304425916540</ID_Subject>
+<Organization>
+<Code_SP>007002000000</Code_SP>
+<Content>Акционерное общество &quot;Банк Финсервис&quot;, ИНН: 7750004270</Content>
+<Name>Акционерное общество &quot;Банк Финсервис&quot;</Name>
+<INN>7750004270</INN>
+</Organization>
+</Owner>
+<DocFound>
+<ID_Document>304425916340</ID_Document>
+<Content>&apos;Договор о последующей ипотеке&apos; №06/303/20 от 23.07.2020</Content>
+<Type_Document>010003006000</Type_Document>
+<Name>Договор о последующей ипотеке</Name>
+<Number>06/303/20</Number>
+<Date>23.07.2020</Date>
+</DocFound>
+</Encumbrance>
+</Right>
+<NoShareHolding>не зарегистрировано</NoShareHolding>
+</ObjectRight>
+<RightAssert>данные отсутствуют</RightAssert>
+<RightClaim>данные отсутствуют</RightClaim>
+<RightAgainst>данные отсутствуют</RightAgainst>
+<RightSteal>данные отсутствуют</RightSteal>
+<WithoutThirdParty>данные отсутствуют</WithoutThirdParty>
+<InabilityRegWithoutOwner></InabilityRegWithoutOwner>
+<InabilityRegZU></InabilityRegZU>
+</ExtractObject>
+<InfoENK/>
+<InfoPIK/>
+<FootContent>
+<Recipient>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ &quot;ЛИЗИНГОВАЯ КОМПАНИЯ &quot;ФИНСЕРВИС ЛИЗИНГ&quot; ИНН 7804601438</Recipient>
+<ExtractDate>29.11.2021</ExtractDate>
+<Content></Content>
+</FootContent>
+</ExtractObjectRight>
+</ReestrExtract>
+</KPOKS>

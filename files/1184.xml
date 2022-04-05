@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="https://portal.rosreestr.ru/xsl/EGRP/Reestr_Extract_Big/OKS/07/Common.xsl"?>
+
+<KVOKS xmlns="urn://x-artefacts-rosreestr-ru/outgoing/kvoks/3.0.1"
+xmlns:smev="urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1"
+xmlns:num="urn://x-artefacts-rosreestr-ru/commons/complex-types/numbers/1.0"
+xmlns:adrs="urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/4.0.1"
+xmlns:spa="urn://x-artefacts-rosreestr-ru/commons/complex-types/entity-spatial/5.0.1"
+xmlns:param="urn://x-artefacts-rosreestr-ru/commons/complex-types/parameters-oks/2.0.1"
+xmlns:cer="urn://x-artefacts-rosreestr-ru/commons/complex-types/certification-doc/1.0"
+xmlns:doc="urn://x-artefacts-rosreestr-ru/commons/complex-types/document-output/4.0.1"
+xmlns:ch="urn://x-artefacts-rosreestr-ru/commons/complex-types/cultural-heritage/2.0.1">
+<Object>
+<ID_Object>2685141988061</ID_Object>
+<CadastralNumber>61:28:0600009:1184</CadastralNumber>
+<ObjectType>002002001000</ObjectType>
+<ObjectTypeText>Здание</ObjectTypeText>
+<Name>Производственный корпус горячего цинкования</Name>
+<Area>
+<Area>6717.1</Area>
+<AreaText>6717.1 кв.м</AreaText>
+<Unit>012002001000</Unit>
+</Area>
+<Inv_No>49656 Б</Inv_No>
+<Address>
+<ID_Address>2685141988161</ID_Address>
+<Content>Ростовская область, Октябрьский район, х. Красный Луч, Октябрьская промышленная зона, ул. Западная №14, здание 2</Content>
+<Region Name="Ростовская область" Code="61"/>
+<Code_OKATO>60241827001</Code_OKATO>
+<District Name="Октябрьский" Type="р-н" />
+<Locality Name="Красный Луч" Type="х." />
+<Street Name="Западная №14" Type="ул" />
+<Level1 Name="2" Type="д" />
+</Address>
+</Object>
+<eDocument CodeType="112" Version="07" Scope="GKN">
+<Sender Kod="00.0.4.195"
+Name="ФГИС ЕГРН"
+Region="99"
+Date_Upload="2021-11-29"
+Appointment="Государственный регистратор"
+/>
+<Recipient Kod="00.0.4.111" Name="ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ &quot;ЛИЗИНГОВАЯ КОМПАНИЯ &quot;ФИНСЕРВИС ЛИЗИНГ&quot; ИНН 7804601438" />
+</eDocument>
+<ReestrExtract>
+<DeclarAttribute ID_KUVI="0"
+ExtractTypeCode="012000"
+ExtractTypeText="Выписка из Единого государственного реестра недвижимости об объекте недвижимости"
+ExtractNumber="99/2021/434523100"
+ExtractDate="29.11.2021"
+RequeryNumber="80-216124318"
+RequeryDate="29.11.2021"
+ExtractCount="1"
+NoticeCount="0"
+RefuseCount="0"
+Registrator="ФГИС ЕГРН">
+<ReceivName>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ &quot;ЛИЗИНГОВАЯ КОМПАНИЯ &quot;ФИНСЕРВИС ЛИЗИНГ&quot; ИНН 7804601438</ReceivName>
+<ReceivAdress>не указан</ReceivAdress>
+</DeclarAttribute>
+<ExtractObjectRight>
+<HeadContent>
+<ID_REC_KUVI>0</ID_REC_KUVI>
+<Title>ФЕДЕРАЛЬНАЯ СЛУЖБА ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ, КАДАСТРА И КАРТОГРАФИИ</Title>
+<DeptName>ФГИС ЕГРН</DeptName>
+<ExtractTitle>Выписка из Единого государственного реестра недвижимости об объекте недвижимости</ExtractTitle>
+<Content>На основании запроса от 29.11.2021 г., поступившего на рассмотрение 29.11.2021 г., сообщаем, что согласно записям Единого государственного реестра недвижимости:</Content>
+</HeadContent>
+<ExtractObject>
+<ObjectRight>
+<Right RightNumber="1">
+<Owner >
+<ID_Subject>2685141989661</ID_Subject>
+<Organization>
+<Code_SP>007002000000</Code_SP>
+<Content>Общество с ограниченной ответственностью &quot;ВЕНТАЛЛ-ДОН&quot;, ИНН: 6125032993</Content>
+<Name>Общество с ограниченной ответственностью &quot;ВЕНТАЛЛ-ДОН&quot;</Name>
+<INN>6125032993</INN>
+</Organization>
+</Owner>
+<Registration >
+<ID_Record>2685141989161</ID_Record>
+<RegNumber>61:28:0600009:1184-61/034/2020-5</RegNumber>
+<Type>001001000000</Type>
+<Name>Собственность, № 61:28:0600009:1184-61/034/2020-5 от 06.10.2020</Name>
+<RegDate>06.10.2020</RegDate>
+</Registration>
+<NoEncumbrance>не зарегистрировано</NoEncumbrance>
+</Right>
+<NoShareHolding>не зарегистрировано</NoShareHolding>
+</ObjectRight>
+<RightAssert>данные отсутствуют</RightAssert>
+<RightClaim>данные отсутствуют</RightClaim>
+<RightAgainst>данные отсутствуют</RightAgainst>
+<RightSteal>данные отсутствуют</RightSteal>
+<WithoutThirdParty>данные отсутствуют</WithoutThirdParty>
+<InabilityRegWithoutOwner></InabilityRegWithoutOwner>
+<InabilityRegZU></InabilityRegZU>
+</ExtractObject>
+<InfoENK/>
+<InfoPIK/>
+<FootContent>
+<Recipient>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ &quot;ЛИЗИНГОВАЯ КОМПАНИЯ &quot;ФИНСЕРВИС ЛИЗИНГ&quot; ИНН 7804601438</Recipient>
+<ExtractDate>29.11.2021</ExtractDate>
+<Content></Content>
+</FootContent>
+</ExtractObjectRight>
+</ReestrExtract>
+</KVOKS>

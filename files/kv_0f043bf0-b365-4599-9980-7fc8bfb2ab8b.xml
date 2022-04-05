@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="https://portal.rosreestr.ru/xsl/EGRP/Reestr_Extract_Big/OKS/07/Common.xsl"?>
+
+<KVOKS xmlns="urn://x-artefacts-rosreestr-ru/outgoing/kvoks/3.0.1"
+xmlns:smev="urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1"
+xmlns:num="urn://x-artefacts-rosreestr-ru/commons/complex-types/numbers/1.0"
+xmlns:adrs="urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/4.0.1"
+xmlns:spa="urn://x-artefacts-rosreestr-ru/commons/complex-types/entity-spatial/5.0.1"
+xmlns:param="urn://x-artefacts-rosreestr-ru/commons/complex-types/parameters-oks/2.0.1"
+xmlns:cer="urn://x-artefacts-rosreestr-ru/commons/complex-types/certification-doc/1.0"
+xmlns:doc="urn://x-artefacts-rosreestr-ru/commons/complex-types/document-output/4.0.1"
+xmlns:ch="urn://x-artefacts-rosreestr-ru/commons/complex-types/cultural-heritage/2.0.1">
+<Realty>
+<Building CadastralNumber="77:01:0004044:1083" State="01"
+DateCreated="2012-05-22"
+>
+<CadastralBlocks>
+<CadastralBlock>77:01:0004044</CadastralBlock>
+</CadastralBlocks>
+<ObjectType>002001002000</ObjectType>
+<ParentCadastralNumbers>
+<CadastralNumber>77:01:0004044:1</CadastralNumber>
+</ParentCadastralNumbers>
+<OldNumbers>
+<num:OldNumber Type="02" Number="4301573" />
+</OldNumbers>
+<AssignationBuilding>204001000000</AssignationBuilding>
+<ElementsConstruct>
+<param:Material Wall="061001007001" />
+</ElementsConstruct>
+<ExploitationChar YearBuilt="1982" YearUsed="1982" />
+<Floors Floors="4" />
+<Area>9392.8</Area>
+<Address>
+<adrs:OKATO>45286575000</adrs:OKATO>
+<adrs:KLADR>77000000000126600</adrs:KLADR>
+<adrs:PostalCode>123290</adrs:PostalCode>
+<adrs:Region>77</adrs:Region>
+<adrs:UrbanDistrict Name="Пресненский" Type="р-н" />
+<adrs:Street Name="Ермакова Роща" Type="ул" />
+<adrs:Level1 Type="д" Value="7а" />
+<adrs:Level3 Type="строен" Value="2" />
+</Address>
+<CadastralCost Value="478885614.82" Unit="383" />
+<Encumbrances>
+<Encumbrance>
+<Type>022008000000</Type>
+<OwnersRestrictionInFavorem>
+<OwnerRestrictionInFavorem>
+<Organization>
+<Name>Общество с ограниченной ответственностью &quot;РТ-Капитал&quot;</Name>
+</Organization>
+</OwnerRestrictionInFavorem>
+</OwnersRestrictionInFavorem>
+<Registration>
+<RegNumber>77:01:0004044:1083-77/011/2018-2</RegNumber>
+<RegDate>2018-08-14</RegDate>
+</Registration>
+</Encumbrance>
+<Encumbrance>
+<Type>022007000000</Type>
+<OwnersRestrictionInFavorem>
+<OwnerRestrictionInFavorem>
+<Organization>
+<Name>Акционерный Коммерческий Банк &quot;НОВИКОМБАНК&quot; акционерное общество</Name>
+</Organization>
+</OwnerRestrictionInFavorem>
+</OwnersRestrictionInFavorem>
+<Registration>
+<RegNumber>77-77/011-77/011/015/2015-716/1</RegNumber>
+<RegDate>2015-11-27</RegDate>
+</Registration>
+</Encumbrance>
+<Encumbrance>
+<Type>022099000000</Type>
+<OwnersRestrictionInFavorem>
+<OwnerRestrictionInFavorem>
+<Organization>
+<Name>Открытое акционерное общество &quot;ЭЛЕКС ПОЛЮС ТАКСИ&quot;</Name>
+</Organization>
+</OwnerRestrictionInFavorem>
+</OwnersRestrictionInFavorem>
+<Registration>
+<RegNumber>77-01/30-843/2003-145</RegNumber>
+<RegDate>2003-10-20</RegDate>
+</Registration>
+</Encumbrance>
+</Encumbrances>
+<EntitySpatial EntSys="ID1" >
+<spa:SpatialElement >
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="1" >
+<spa:Ordinate X="10174.76" Y="1974.89" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="2" >
+<spa:Ordinate X="10180.42" Y="1959.93" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="3" >
+<spa:Ordinate X="10182.14" Y="1955.5" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="4" >
+<spa:Ordinate X="10132.74" Y="1935.5" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="5" >
+<spa:Ordinate X="10124.95" Y="1953.5" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="6" >
+<spa:Ordinate X="10129.95" Y="1956.1" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="7" >
+<spa:Ordinate X="10127.74" Y="1961.9" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="8" >
+<spa:Ordinate X="10130.34" Y="1963.44" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="9" >
+<spa:Ordinate X="10128.55" Y="1968.25" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="10" >
+<spa:Ordinate X="10136.74" Y="1971.85" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="11" >
+<spa:Ordinate X="10132.54" Y="1983.05" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="12" >
+<spa:Ordinate X="10140.74" Y="1986.45" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="13" >
+<spa:Ordinate X="10138.09" Y="1994.14" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="14" >
+<spa:Ordinate X="10146.38" Y="1996.97" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="15" >
+<spa:Ordinate X="10145.33" Y="2000.33" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="16" >
+<spa:Ordinate X="10163.04" Y="2006.7" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+<spa:SpelementUnit TypeUnit="Точка" SuNmb="1" >
+<spa:Ordinate X="10174.76" Y="1974.89" OrdNmb="1"
+/>
+</spa:SpelementUnit>
+</spa:SpatialElement>
+</EntitySpatial>
+<Notes> Сведения о наименовании, количестве этажей, в том числе подземных этажей имеют статус «Актуальные незасвидетельствованные». Право (ограничение права, обременение объекта недвижимости) зарегистрировано на данный объект недвижимости с наименованием «Здание», количеством этажей, в том числе подземных этажей отсутствует.</Notes>
+<Flats>
+<Flat CadastralNumber="77:01:0004044:1640" >
+<Area>2292.6</Area>
+<PositionInObject>
+<Levels>
+<Level Number="3" Type="01">
+<Position NumberOnPlan="4301573/0003">
+</Position>
+</Level>
+</Levels>
+</PositionInObject>
+</Flat>
+<Flat CadastralNumber="77:01:0004044:1643" >
+<Area>20.2</Area>
+<PositionInObject>
+<Levels>
+<Level Number="0" Type="07">
+<Position NumberOnPlan="4301573/0006">
+</Position>
+</Level>
+</Levels>
+</PositionInObject>
+</Flat>
+<Flat CadastralNumber="77:01:0004044:1638" >
+<Area>2359.1</Area>
+<PositionInObject>
+<Levels>
+<Level Number="1" Type="01">
+<Position NumberOnPlan="4301573/0001">
+</Position>
+</Level>
+</Levels>
+</PositionInObject>
+</Flat>
+<Flat CadastralNumber="77:01:0004044:1639" >
+<Area>2200.1</Area>
+<PositionInObject>
+<Levels>
+<Level Number="2" Type="01">
+<Position NumberOnPlan="4301573/0002">
+</Position>
+</Level>
+</Levels>
+</PositionInObject>
+</Flat>
+<Flat CadastralNumber="77:01:0004044:1641" >
+<Area>2321.2</Area>
+<PositionInObject>
+<Levels>
+<Level Number="4" Type="01">
+<Position NumberOnPlan="4301573/0004">
+</Position>
+</Level>
+</Levels>
+</PositionInObject>
+</Flat>
+<Flat CadastralNumber="77:01:0004044:1642" >
+<Area>109.1</Area>
+<PositionInObject>
+<Levels>
+<Level Number="0" Type="07">
+<Position NumberOnPlan="4301573/0005">
+</Position>
+</Level>
+</Levels>
+</PositionInObject>
+</Flat>
+<Flat CadastralNumber="77:01:0004044:1644" >
+<Area>15.9</Area>
+<PositionInObject>
+<Levels>
+<Level Number="1" Type="01">
+<Position NumberOnPlan="4301573/0007">
+</Position>
+</Level>
+</Levels>
+</PositionInObject>
+</Flat>
+<Flat CadastralNumber="77:01:0004044:1648" >
+<Area>16.2</Area>
+<PositionInObject>
+<Levels>
+<Level Number="0" Type="07">
+<Position NumberOnPlan="4301573/0011">
+</Position>
+</Level>
+</Levels>
+</PositionInObject>
+</Flat>
+<Flat CadastralNumber="77:01:0004044:1645" >
+<Area>19.3</Area>
+<PositionInObject>
+<Levels>
+<Level Number="2" Type="01">
+<Position NumberOnPlan="4301573/0008">
+</Position>
+</Level>
+</Levels>
+</PositionInObject>
+</Flat>
+<Flat CadastralNumber="77:01:0004044:1646" >
+<Area>19.6</Area>
+<PositionInObject>
+<Levels>
+<Level Number="3" Type="01">
+<Position NumberOnPlan="4301573/0009">
+</Position>
+</Level>
+</Levels>
+</PositionInObject>
+</Flat>
+<Flat CadastralNumber="77:01:0004044:1647" >
+<Area>19.5</Area>
+<PositionInObject>
+<Levels>
+<Level Number="4" Type="01">
+<Position NumberOnPlan="4301573/0010">
+</Position>
+</Level>
+</Levels>
+</PositionInObject>
+</Flat>
+</Flats>
+</Building>
+</Realty>
+<CertificationDoc>
+<cer:Organization>ФГИС ЕГРН</cer:Organization>
+<cer:Date>2021-04-01</cer:Date>
+<cer:Number>99/2021/384731138</cer:Number>
+</CertificationDoc>
+<CoordSystems>
+<spa:CoordSystem Name="СК кадастрового округа" CsId="ID0" />
+<spa:CoordSystem Name="ПМСК Москвы" CsId="ID1" />
+</CoordSystems>
+<eDocument CodeType="112" Version="07" Scope="GKN">
+<Sender Kod="00.0.4.195"
+Name="ФГИС ЕГРН"
+Region="99"
+Date_Upload="2021-04-01"
+Appointment="Государственный регистратор"
+/>
+<Recipient Kod="00.0.4.111" Name="АКЦИОНЕРНОЕ ОБЩЕСТВО &quot;БАНК ФИНСЕРВИС&quot; ИНН 7750004270" />
+</eDocument>
+<ReestrExtract>
+<DeclarAttribute ID_KUVI="0"
+ExtractTypeCode="012000"
+ExtractTypeText="Выписка из Единого государственного реестра недвижимости об объекте недвижимости"
+ExtractNumber="99/2021/384731138"
+ExtractDate="01.04.2021"
+RequeryNumber="80-183163257"
+RequeryDate="31.03.2021"
+ExtractCount="1"
+NoticeCount="0"
+RefuseCount="0"
+Registrator="ФГИС ЕГРН">
+<ReceivName>АКЦИОНЕРНОЕ ОБЩЕСТВО &quot;БАНК ФИНСЕРВИС&quot; ИНН 7750004270</ReceivName>
+<ReceivAdress>не указан</ReceivAdress>
+</DeclarAttribute>
+<ExtractObjectRight>
+<HeadContent>
+<ID_REC_KUVI>0</ID_REC_KUVI>
+<Title>ФЕДЕРАЛЬНАЯ СЛУЖБА ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ, КАДАСТРА И КАРТОГРАФИИ</Title>
+<DeptName>ФГИС ЕГРН</DeptName>
+<ExtractTitle>Выписка из Единого государственного реестра недвижимости об объекте недвижимости</ExtractTitle>
+<Content>На основании запроса от 31.03.2021 г., поступившего на рассмотрение 01.04.2021 г., сообщаем, что согласно записям Единого государственного реестра недвижимости:</Content>
+</HeadContent>
+<ExtractObject>
+<ObjectRight>
+<Right RightNumber="1">
+<Owner >
+<ID_Subject>219031474577</ID_Subject>
+<Organization>
+<Code_SP>007002000000</Code_SP>
+<Content>Общество с ограниченной ответственностью &quot;Комплексное обслуживание недвижимости&quot;, ИНН: 7703789060</Content>
+<Name>Общество с ограниченной ответственностью &quot;Комплексное обслуживание недвижимости&quot;</Name>
+<INN>7703789060</INN>
+</Organization>
+</Owner>
+<Registration >
+<ID_Record>709067130277</ID_Record>
+<RegNumber>77-77-12/065/2014-644</RegNumber>
+<Type>001001000000</Type>
+<Name>Собственность, № 77-77-12/065/2014-644 от 16.12.2014</Name>
+<RegDate>16.12.2014</RegDate>
+</Registration>
+<Encumbrance>
+<ID_Record>709067165377</ID_Record>
+<RegNumber>77:01:0004044:1083-77/011/2018-2</RegNumber>
+<Type>022008000000</Type>
+<Name>Залог в силу закона</Name>
+<ShareText>весь объект
+</ShareText>
+<RegDate>14.08.2018</RegDate>
+<Duration>
+<Term>не позднее 13.10.2014</Term>
+</Duration>
+<Owner >
+<ID_Subject>414403261477</ID_Subject>
+<Organization>
+<Code_SP>007002000000</Code_SP>
+<Content>Общество с ограниченной ответственностью &quot;РТ- Капитал&quot;, ИНН: 7704770859</Content>
+<Name>Общество с ограниченной ответственностью &quot;РТ- Капитал&quot;</Name>
+<INN>7704770859</INN>
+</Organization>
+</Owner>
+<DocFound>
+<ID_Document>557259944977</ID_Document>
+<Content>Договор уступки прав (требования) oт 06.12.2016 №0612</Content>
+<Type_Document>010003011000</Type_Document>
+<Name>Договор уступки прав (требования)</Name>
+<Number>0612</Number>
+<Date>06.12.2016</Date>
+</DocFound>
+<DocFound>
+<ID_Document>223445242077</ID_Document>
+<Content>Кредитный договор oт 14.10.2014 №650кл/14</Content>
+<Type_Document>010003016000</Type_Document>
+<Name>Кредитный договор</Name>
+<Number>650кл/14</Number>
+<Date>14.10.2014</Date>
+</DocFound>
+<DocFound>
+<ID_Document>557259946677</ID_Document>
+<Content>Дополнительное соглашение к договору №0612 от 06.12.2016г уступки прав (требования) oт 14.09.2017 №6</Content>
+<Type_Document>010004000000</Type_Document>
+<Name>Дополнительное соглашение к договору №0612 от 06.12.2016г уступки прав (требования)</Name>
+<Number>6</Number>
+<Date>14.09.2017</Date>
+</DocFound>
+</Encumbrance>
+<Encumbrance>
+<ID_Record>709067137177</ID_Record>
+<RegNumber>77-77/011-77/011/015/2015-716/1</RegNumber>
+<Type>022007000000</Type>
+<Name>Ипотека</Name>
+<ShareText>г.Москва, ул.Ермакова Роща, д.7А, строен.2,кад.№ 77:01:0004044:1083,Здание, назначение: нежилое, 4 - этажный, общая площадь 9 392,8 кв.м
+</ShareText>
+<RegDate>27.11.2015</RegDate>
+<Duration>
+<Term>до 11.10.2017</Term>
+</Duration>
+<Owner >
+<ID_Subject>15894422177</ID_Subject>
+<Organization>
+<Code_SP>007002000000</Code_SP>
+<Content>АО АКБ &quot;НОВИКОМБАНК&quot;, ИНН: 7706196340</Content>
+<Name>АО АКБ &quot;НОВИКОМБАНК&quot;</Name>
+<INN>7706196340</INN>
+</Organization>
+</Owner>
+<DocFound>
+<ID_Document>310676444077</ID_Document>
+<Content>Договор ипотеки oт 13.10.2015 №650ди/14</Content>
+<Type_Document>010003006000</Type_Document>
+<Name>Договор ипотеки</Name>
+<Number>650ди/14</Number>
+<Date>13.10.2015</Date>
+</DocFound>
+<DocFound>
+<ID_Document>310676444277</ID_Document>
+<Content>Кредитный договор oт 14.10.2014 №650кл/14</Content>
+<Type_Document>010003016000</Type_Document>
+<Name>Кредитный договор</Name>
+<Number>650кл/14</Number>
+<Date>14.10.2014</Date>
+</DocFound>
+</Encumbrance>
+</Right>
+<NoShareHolding>не зарегистрировано</NoShareHolding>
+</ObjectRight>
+<RightAssert>данные отсутствуют</RightAssert>
+<RightClaim>данные отсутствуют</RightClaim>
+<RightAgainst>данные отсутствуют</RightAgainst>
+<RightSteal>данные отсутствуют</RightSteal>
+<WithoutThirdParty>данные отсутствуют</WithoutThirdParty>
+<InabilityRegWithoutOwner></InabilityRegWithoutOwner>
+<InabilityRegZU></InabilityRegZU>
+</ExtractObject>
+<InfoENK/>
+<InfoPIK/>
+<FootContent>
+<Recipient>АКЦИОНЕРНОЕ ОБЩЕСТВО &quot;БАНК ФИНСЕРВИС&quot; ИНН 7750004270</Recipient>
+<ExtractDate>01.04.2021</ExtractDate>
+<Content></Content>
+</FootContent>
+</ExtractObjectRight>
+</ReestrExtract>
+</KVOKS>
