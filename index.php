@@ -22,6 +22,6 @@ foreach ($egrn as $file) {
 }
 
 foreach ($content as $item) {
-    var_dump($item->getRealtyType());
+    echo $item->getName() . '<br>';
 }
 
