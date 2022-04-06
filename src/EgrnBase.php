@@ -38,7 +38,7 @@ abstract class EgrnBase
                 $addressString .= $this->egrn['Address']['adrs:PostalCode'] . ', ';
             }
             if (isset($this->egrn['Address']['adrs:Region'])) {
-                $regions = include 'regions.php';
+                $regions = include 'resources/regions.php';
                 $addressString .= $regions[$this->egrn['Address']['adrs:Region']] . ', ';
             }
             if (isset($this->egrn['Address']['adrs:City'])) {
@@ -75,8 +75,8 @@ abstract class EgrnBase
     public function getRealtyType() : string
     {
         if(isset($this->egrn['ObjectType'])) {
-            $types = include 'realtyTypes.php';
-            return $types[$this->egrn['ObjectType']];
+            $types = include 'resources/realtyTypes.php';
+            return $types[$this->egrn['ObjectType']] ?? '';
         } else {
             return '';
         }
@@ -90,7 +90,7 @@ abstract class EgrnBase
     public function getCategory() : string
     {
         if(isset($this->egrn['Category'])) {
-            $types = include 'categoryTypes.php';
+            $types = include 'resources/categoryTypes.php';
             return $types[$this->egrn['Category']];
         } else {
             return '';
@@ -105,7 +105,7 @@ abstract class EgrnBase
     public function getUtilization() : string
     {
         if(isset($this->egrn['Utilization']['@attributes']['Utilization'])) {
-            $types = include 'utilizationType.php';
+            $types = include 'resources/utilizationType.php';
             return $types[$this->egrn['Utilization']['@attributes']['Utilization']];
         } else {
             return '';

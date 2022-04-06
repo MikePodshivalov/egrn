@@ -1,6 +1,5 @@
 <?php
 
-
 use Deripipka\Egrn\EgrnFabric;
 
 ini_set('error_reporting', E_ALL);
@@ -9,7 +8,6 @@ ini_set('display_startup_errors', 1);
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-$filePath = __DIR__ . '/files/';
 $content = [];
 $path = __DIR__ . '/files/';
 $files = scandir($path);
@@ -20,16 +18,10 @@ foreach($files as $file) {
 }
 
 foreach ($egrn as $file) {
-    $content[] = EgrnFabric::create($filePath . $file);
+    $content[] = EgrnFabric::create($path . $file);
 }
-
 
 foreach ($content as $item) {
-    echo $item->getNotes() . '<br>';
+    var_dump($item->getRealtyType());
 }
-
-
-//echo '<pre>';
-//print_r($content);
-//echo '</pre>';
 

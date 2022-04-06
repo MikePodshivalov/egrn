@@ -5,28 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77aa2e2c-7952-449f-9356-719da2d84d63" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/1184.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/1245.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/152.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/176.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/177.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/kv_0f043bf0-b365-4599-9980-7fc8bfb2ab8b.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/kv_71b4e461-5ac8-4847-9c11-97b565a6312d.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/obj_4d05ed74-7915-493f-b613-a47d40a8c8cd.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/sddsd.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/здание.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/зу с встроенными зу.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/зу.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/помещение.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/сооружение.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Composer/AutoloadGenerator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Plugin.php" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Realty/Uncompleted.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/kv_0f043bf0-b365-4599-9980-7fc8bfb2ab8b.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EgrnBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EgrnBase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EgrnFabric.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EgrnFabric.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/files" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -99,7 +83,9 @@
       <updated>1649180307665</updated>
       <workItem from="1649180308814" duration="4374000" />
       <workItem from="1649184692051" duration="1088000" />
-      <workItem from="1649185789060" duration="307000" />
+      <workItem from="1649185789060" duration="672000" />
+      <workItem from="1649268597448" duration="22000" />
+      <workItem from="1649269327189" duration="1904000" />
     </task>
     <servers />
   </component>
