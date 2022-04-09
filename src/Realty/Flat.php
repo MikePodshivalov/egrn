@@ -2,9 +2,7 @@
 
 namespace Deripipka\Egrn\Realty;
 
-use Deripipka\Egrn\EgrnBase;
-
-class Flat extends EgrnBase
+class Flat extends EgrnRealty
 {
     public function getArea() : string
     {

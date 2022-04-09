@@ -18,10 +18,18 @@ foreach($files as $file) {
 }
 
 foreach ($egrn as $file) {
-    $content[] = EgrnFabric::create($path . $file);
+    $content[$file] = EgrnFabric::create($path . $file);
 }
+$n = 0;
 
-foreach ($content as $item) {
-    echo $item->getName() . '<br>';
+//echo '<pre>';
+//print_r($content['152.xml']->getArea());
+//echo '</pre>';
+
+
+foreach ($content as $file => $item) {
+    echo $item->getType() . '*******' . $item->getKeyParameter() . '-' . $item->getArea() . '*******' . $file . '<br>';
+    echo '-------------------------------------------<br>';
+    $n++;
 }
-
+echo $n;

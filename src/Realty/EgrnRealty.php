@@ -2,18 +2,10 @@
 
 namespace Deripipka\Egrn\Realty;
 
-class ObjectRealty extends EgrnRealty
+use Deripipka\Egrn\EgrnBase;
+
+abstract class EgrnRealty extends EgrnBase
 {
-    public function getCadastralNumber() : string
-    {
-        return $this->egrn['CadastralNumber'] ?? '';
-    }
-
-    public function getAddress() : string
-    {
-        return $this->egrn['Address']['Content'] ?? parent::getAddress();
-    }
-
     public function getType() : string
     {
         if(isset($this->egrn['ObjectType'])) {

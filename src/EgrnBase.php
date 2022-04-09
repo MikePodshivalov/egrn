@@ -23,6 +23,11 @@ abstract class EgrnBase
         }
     }
 
+    public function getKeyParameter()
+    {
+        return 'Площадь';
+    }
+
     public function getCadastralCost() : string
     {
         return $this->egrn['CadastralCost']['@attributes']['Value'] ?? '';
@@ -39,46 +44,36 @@ abstract class EgrnBase
             }
             if (isset($this->egrn['Address']['adrs:Region'])) {
                 $regions = include 'resources/regions.php';
-                $addressString .= $regions[$this->egrn['Address']['adrs:Region']] . ', ';
+                $addressString .= $regions[$this->egrn['Address']['adrs:Region']];
             }
             if (isset($this->egrn['Address']['adrs:City'])) {
-                $addressString .= $this->egrn['Address']['adrs:City']['@attributes']['Type'] . '. ' .
-                    $this->egrn['Address']['adrs:City']['@attributes']['Name'] . ', ';
+                $addressString .= ', ' . $this->egrn['Address']['adrs:City']['@attributes']['Type'] . '. ' .
+                    $this->egrn['Address']['adrs:City']['@attributes']['Name'];
             }
             if (isset($this->egrn['Address']['adrs:Street'])) {
-                $addressString .= $this->egrn['Address']['adrs:Street']['@attributes']['Type'] . '. ' .
-                    $this->egrn['Address']['adrs:Street']['@attributes']['Name'] . ', ';
+                $addressString .= ', ' . $this->egrn['Address']['adrs:Street']['@attributes']['Type'] . '. ' .
+                    $this->egrn['Address']['adrs:Street']['@attributes']['Name'];
             }
             if (isset($this->egrn['Address']['adrs:Level1'])) {
-                $addressString .= $this->egrn['Address']['adrs:Level1']['@attributes']['Type'] . '. ' .
-                    $this->egrn['Address']['adrs:Level1']['@attributes']['Value'] . ', ';
+                $addressString .= ', ' . $this->egrn['Address']['adrs:Level1']['@attributes']['Type'] . '. ' .
+                    $this->egrn['Address']['adrs:Level1']['@attributes']['Value'];
             }
             if (isset($this->egrn['Address']['adrs:Level2'])) {
-                $addressString .= $this->egrn['Address']['adrs:Level2']['@attributes']['Type'] . '. ' .
-                    $this->egrn['Address']['adrs:Level2']['@attributes']['Value'] . ', ';
+                $addressString .= ', ' . $this->egrn['Address']['adrs:Level2']['@attributes']['Type'] . '. ' .
+                    $this->egrn['Address']['adrs:Level2']['@attributes']['Value'];
             }
             if (isset($this->egrn['Address']['adrs:Level3'])) {
-                $addressString .= $this->egrn['Address']['adrs:Level3']['@attributes']['Type'] . '. ' .
-                    $this->egrn['Address']['adrs:Level3']['@attributes']['Value'] . ', ';
+                $addressString .= ', ' . $this->egrn['Address']['adrs:Level3']['@attributes']['Type'] . '. ' .
+                    $this->egrn['Address']['adrs:Level3']['@attributes']['Value'];
             }
             if (isset($this->egrn['Address']['adrs:Apartment'])) {
-                $addressString .= $this->egrn['Address']['adrs:Apartment']['@attributes']['Type'] . '. ' .
-                    $this->egrn['Address']['adrs:Apartment']['@attributes']['Value'] . ', ';
+                $addressString .= ', ' . $this->egrn['Address']['adrs:Apartment']['@attributes']['Type'] . '. ' .
+                    $this->egrn['Address']['adrs:Apartment']['@attributes']['Value'];
             }
             if (isset($this->egrn['Address']['adrs:Other'])) {
-                $addressString .= $this->egrn['Address']['adrs:Other'] . ', ';
+                $addressString .= ', ' . $this->egrn['Address']['adrs:Other'];
             }
             return $addressString;
-        }
-    }
-
-    public function getRealtyType() : string
-    {
-        if(isset($this->egrn['ObjectType'])) {
-            $types = include 'resources/realtyTypes.php';
-            return $types[$this->egrn['ObjectType']] ?? '';
-        } else {
-            return '';
         }
     }
 
@@ -112,7 +107,7 @@ abstract class EgrnBase
         }
     }
 
-    public function getParentCadastralNumbers() : string
+    public function getParentCadastralNumbers() : string | array
     {
         return $this->egrn['ParentCadastralNumbers']['CadastralNumber'] ?? '';
     }

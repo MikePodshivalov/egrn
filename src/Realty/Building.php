@@ -2,9 +2,10 @@
 
 namespace Deripipka\Egrn\Realty;
 
-use Deripipka\Egrn\EgrnBase;
-
-class Building extends EgrnBase
+class Building extends EgrnRealty
 {
-//
+    public function getArea() : string
+    {
+        return $this->egrn['Area'] ?? '';
+    }
 }
