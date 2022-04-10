@@ -100,7 +100,7 @@ abstract class EgrnBase
     public function getUtilization() : string
     {
         if(isset($this->egrn['Utilization']['@attributes']['Utilization'])) {
-            $types = include 'resources/utilizationType.php';
+            $types = include 'resources/utilizationTypes.php';
             return $types[$this->egrn['Utilization']['@attributes']['Utilization']];
         } else {
             return '';
@@ -124,7 +124,6 @@ abstract class EgrnBase
 
     public function getOwner()
     {
-//
 //        if(isset($this->egrn['Right']['Owner']['Person'])) {
 //            foreach ($this->egrn['Rights']['Right'] as $owner) {
 //                $ownerStr = '';

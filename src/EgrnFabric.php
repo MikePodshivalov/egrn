@@ -29,6 +29,10 @@ class EgrnFabric
             return new Parcel(self::addOwnerToArray('Parcels', 'Parcel', $egrnArray));
         } elseif (isset($egrnArray['Object'])) {
             return new ObjectRealty(self::addOwnerToArray('Object', null, $egrnArray));
+        } elseif (isset($egrnArray['ReestrExtract']['ExtractObjectRight']['ExtractObject']['ObjectDesc'])) {
+            $egrnArray['ReestrExtract']['ExtractObjectRight']['ExtractObject']['ObjectDesc']['Owner'] =
+                $egrnArray['ReestrExtract']['ExtractObjectRight']['ExtractObject']['Owner'];
+            return new ObjectRealty($egrnArray['ReestrExtract']['ExtractObjectRight']['ExtractObject']['ObjectDesc']);
         }
         return false;
     }
