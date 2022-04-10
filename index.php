@@ -23,12 +23,16 @@ foreach ($egrn as $file) {
 $n = 0;
 
 //echo '<pre>';
-//print_r($content['152.xml']->getArea());
+//print_r($content['152.xml']->egrn);
 //echo '</pre>';
 
 
 foreach ($content as $file => $item) {
-    echo $item->getType() . '*******' . $item->getKeyParameter() . '-' . $item->getArea() . '*******' . $file . '<br>';
+//    echo $item->getType() . '*******' . $item->getAssignationName() . '*******' . $file . '<br>';
+    echo '<pre>';
+    echo $file . '<br>';
+    print_r($item->getOwner());
+    echo '</pre>';
     echo '-------------------------------------------<br>';
     $n++;
 }

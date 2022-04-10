@@ -17,19 +17,30 @@ class EgrnFabric
         $xmlString = file_get_contents($filePath);
         $egrnArray = XmlToArray::convert($xmlString);
         if(isset($egrnArray['Realty']['Building'])) {
-            return new Building($egrnArray['Realty']['Building']);
+            return new Building(self::addOwnerToArray('Realty', 'Building', $egrnArray));
         } elseif (isset($egrnArray['Realty']['Construction'])) {
-            return new Construction($egrnArray['Realty']['Construction']);
+            return new Construction(self::addOwnerToArray('Realty', 'Construction', $egrnArray));
         } elseif (isset($egrnArray['Realty']['Flat'])) {
-            return new Flat($egrnArray['Realty']['Flat']);
+            return new Flat(self::addOwnerToArray('Realty', 'Flat', $egrnArray));
         } elseif (isset($egrnArray['Realty']['Uncompleted'])) {
-            return new Uncompleted($egrnArray['Realty']['Uncompleted']);
+            return new Uncompleted(self::addOwnerToArray('Realty', 'Uncompleted', $egrnArray));
         } elseif (isset($egrnArray['Parcels']['Parcel'])) {
             $egrnArray['Parcels']['Parcel']['Address'] = $egrnArray['Parcels']['Parcel']['Location']['Address'];
-            return new Parcel($egrnArray['Parcels']['Parcel']);
+            return new Parcel(self::addOwnerToArray('Parcels', 'Parcel', $egrnArray));
         } elseif (isset($egrnArray['Object'])) {
-            return new ObjectRealty($egrnArray['Object']);
+            return new ObjectRealty(self::addOwnerToArray('Object', null, $egrnArray));
         }
         return false;
+    }
+
+    private static function addOwnerToArray(string $key1, $key2, array $arr) : array
+    {
+        if($key2 !== null) {
+            $arr[$key1][$key2]['Owner'] = $arr['ReestrExtract']['ExtractObjectRight']['ExtractObject']['ObjectRight'] ?? '';
+            return $arr[$key1][$key2];
+        } else {
+            $arr[$key1]['Owner'] = $arr['ReestrExtract']['ExtractObjectRight']['ExtractObject']['ObjectRight'] ?? '';
+            return $arr[$key1];
+        }
     }
 }

@@ -117,4 +117,27 @@ abstract class EgrnBase
         return $this->egrn['Notes'] ?? '';
     }
 
+    public function getAssignationName()
+    {
+        return $this->egrn['AssignationName'] ?? '';
+    }
+
+    public function getOwner()
+    {
+//
+//        if(isset($this->egrn['Right']['Owner']['Person'])) {
+//            foreach ($this->egrn['Rights']['Right'] as $owner) {
+//                $ownerStr = '';
+//                $ownerStr .= $owner['Name'] ?? '';
+//                $ownerStr .= ' ' . $owner['Owners']['Owner']['Organization']['Name'] ?? '';
+//                $ownerStr .= ' ' . $owner['Owners']['Registration']['RegNumber'] ?? '';
+//                $ownerStr .= ' ' . $owner['Owners']['Registration']['RegDate'] ?? '';
+//                $ownerStr .= PHP_EOL;
+//            }
+//            return $ownerStr;
+//        }
+
+        return $this->egrn['Owner'] ?? '';
+    }
+
 }
