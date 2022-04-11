@@ -23,8 +23,9 @@ foreach ($egrn as $file) {
 $n = 0;
 
 //echo '<pre>';
-//print_r($content['152.xml']->egrn);
+//print_r($content['obj_f7d481f9-fab8-4422-b7d0-ecbd415d5105.xml']->egrn);
 //echo '</pre>';
+
 
 
 foreach ($content as $file => $item) {

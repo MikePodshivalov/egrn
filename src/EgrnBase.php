@@ -2,6 +2,8 @@
 
 namespace Deripipka\Egrn;
 
+use Deripipka\Egrn\Owners\OwnerFabric;
+
 abstract class EgrnBase
 {
     public function __construct(array $egrn)
@@ -124,19 +126,35 @@ abstract class EgrnBase
 
     public function getOwner()
     {
-//        if(isset($this->egrn['Right']['Owner']['Person'])) {
-//            foreach ($this->egrn['Rights']['Right'] as $owner) {
-//                $ownerStr = '';
-//                $ownerStr .= $owner['Name'] ?? '';
-//                $ownerStr .= ' ' . $owner['Owners']['Owner']['Organization']['Name'] ?? '';
-//                $ownerStr .= ' ' . $owner['Owners']['Registration']['RegNumber'] ?? '';
-//                $ownerStr .= ' ' . $owner['Owners']['Registration']['RegDate'] ?? '';
-//                $ownerStr .= PHP_EOL;
-//            }
-//            return $ownerStr;
-//        }
-
-        return $this->egrn['Owner'] ?? '';
+        if (isset($this->egrn['Owner']['Right'][0])) {
+            $owners = [];
+            foreach ($this->egrn['Owner']['Right'] as $item) {
+                $owner = OwnerFabric::create($item);
+                $owners[] = $this->assembleString($owner);
+            }
+            return $this->arrayToString($owners);
+        }
+        if (isset($this->egrn['Owner']['Right']['Owner'])) {
+            $owner = OwnerFabric::create($this->egrn['Owner']['Right']);
+            return $this->assembleString($owner);
+        }
+        return false;
     }
 
+    protected function assembleString($owner) : string
+    {
+        $ownerString = '';
+        $ownerString .= $owner->name ?? '';
+        $ownerString .= PHP_EOL . ($owner->registration ?? '');
+        return $ownerString;
+    }
+
+    protected function arrayToString(array $arr) :string
+    {
+        $res = '';
+        foreach ($arr as $key => $value) {
+            $res .= ($key + 1) . '. ' . $value . PHP_EOL;
+        }
+        return $res;
+    }
 }
