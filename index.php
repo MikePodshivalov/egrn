@@ -32,7 +32,12 @@ foreach ($content as $file => $item) {
 //    echo $item->getType() . '*******' . $item->getAssignationName() . '*******' . $file . '<br>';
     echo '<pre>';
     echo $file . '<br>';
-    print_r($item->getOwner());
+//    if (get_class($item) == 'Deripipka\Egrn\Realty\ObjectRealty') {
+//        echo '<pre>';
+//        print_r($item);
+//        echo '</pre>';
+//    }
+    echo $item->getOwnerRegistration();
     echo '</pre>';
     echo '-------------------------------------------<br>';
     $n++;

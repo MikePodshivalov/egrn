@@ -2,10 +2,14 @@
 
 namespace Deripipka\Egrn;
 
+use Deripipka\Egrn\Owners\Encumbrance;
 use Deripipka\Egrn\Owners\OwnerFabric;
+use Deripipka\Egrn\Owners\Registration;
 
 abstract class EgrnBase
 {
+    public array $egrn;
+
     public function __construct(array $egrn)
     {
         $this->egrn = $egrn;
@@ -37,46 +41,7 @@ abstract class EgrnBase
 
     public function getAddress() : string | array
     {
-        if (isset($this->egrn['Address']['adrs:Note'])) {
-            return $this->egrn['Address']['adrs:Note'];
-        } else {
-            $addressString = '';
-            if (isset($this->egrn['Address']['adrs:PostalCode'])) {
-                $addressString .= $this->egrn['Address']['adrs:PostalCode'] . ', ';
-            }
-            if (isset($this->egrn['Address']['adrs:Region'])) {
-                $regions = include 'resources/regions.php';
-                $addressString .= $regions[$this->egrn['Address']['adrs:Region']];
-            }
-            if (isset($this->egrn['Address']['adrs:City'])) {
-                $addressString .= ', ' . $this->egrn['Address']['adrs:City']['@attributes']['Type'] . '. ' .
-                    $this->egrn['Address']['adrs:City']['@attributes']['Name'];
-            }
-            if (isset($this->egrn['Address']['adrs:Street'])) {
-                $addressString .= ', ' . $this->egrn['Address']['adrs:Street']['@attributes']['Type'] . '. ' .
-                    $this->egrn['Address']['adrs:Street']['@attributes']['Name'];
-            }
-            if (isset($this->egrn['Address']['adrs:Level1'])) {
-                $addressString .= ', ' . $this->egrn['Address']['adrs:Level1']['@attributes']['Type'] . '. ' .
-                    $this->egrn['Address']['adrs:Level1']['@attributes']['Value'];
-            }
-            if (isset($this->egrn['Address']['adrs:Level2'])) {
-                $addressString .= ', ' . $this->egrn['Address']['adrs:Level2']['@attributes']['Type'] . '. ' .
-                    $this->egrn['Address']['adrs:Level2']['@attributes']['Value'];
-            }
-            if (isset($this->egrn['Address']['adrs:Level3'])) {
-                $addressString .= ', ' . $this->egrn['Address']['adrs:Level3']['@attributes']['Type'] . '. ' .
-                    $this->egrn['Address']['adrs:Level3']['@attributes']['Value'];
-            }
-            if (isset($this->egrn['Address']['adrs:Apartment'])) {
-                $addressString .= ', ' . $this->egrn['Address']['adrs:Apartment']['@attributes']['Type'] . '. ' .
-                    $this->egrn['Address']['adrs:Apartment']['@attributes']['Value'];
-            }
-            if (isset($this->egrn['Address']['adrs:Other'])) {
-                $addressString .= ', ' . $this->egrn['Address']['adrs:Other'];
-            }
-            return $addressString;
-        }
+        return Helpers::parseAddress($this->egrn);
     }
 
     public function getInnerCadastralNumbers() : array | string
@@ -88,7 +53,7 @@ abstract class EgrnBase
     {
         if(isset($this->egrn['Category'])) {
             $types = include 'resources/categoryTypes.php';
-            return $types[$this->egrn['Category']];
+            return $types[$this->egrn['Category']] ?? '';
         } else {
             return '';
         }
@@ -103,7 +68,7 @@ abstract class EgrnBase
     {
         if(isset($this->egrn['Utilization']['@attributes']['Utilization'])) {
             $types = include 'resources/utilizationTypes.php';
-            return $types[$this->egrn['Utilization']['@attributes']['Utilization']];
+            return $types[$this->egrn['Utilization']['@attributes']['Utilization']] ?? '';
         } else {
             return '';
         }
@@ -111,7 +76,7 @@ abstract class EgrnBase
 
     public function getParentCadastralNumbers() : string | array
     {
-        return $this->egrn['ParentCadastralNumbers']['CadastralNumber'] ?? '';
+        return Helpers::arrayToString($this->egrn['ParentCadastralNumbers']['CadastralNumber'] ?? '');
     }
 
     public function getNotes() : string
@@ -124,37 +89,56 @@ abstract class EgrnBase
         return $this->egrn['AssignationName'] ?? '';
     }
 
-    public function getOwner()
+    public function getOwnerName()
     {
         if (isset($this->egrn['Owner']['Right'][0])) {
             $owners = [];
             foreach ($this->egrn['Owner']['Right'] as $item) {
                 $owner = OwnerFabric::create($item);
-                $owners[] = $this->assembleString($owner);
+                $owners[] = $owner->name;
             }
-            return $this->arrayToString($owners);
+            return Helpers::arrayToString($owners);
         }
         if (isset($this->egrn['Owner']['Right']['Owner'])) {
             $owner = OwnerFabric::create($this->egrn['Owner']['Right']);
-            return $this->assembleString($owner);
+            return $owner->name;
         }
         return false;
     }
 
-    protected function assembleString($owner) : string
+    public function getOwnerRegistration()
     {
-        $ownerString = '';
-        $ownerString .= $owner->name ?? '';
-        $ownerString .= PHP_EOL . ($owner->registration ?? '');
-        return $ownerString;
+        if (isset($this->egrn['Owner']['Right'][0])) {
+            $owners = [];
+            foreach ($this->egrn['Owner']['Right'] as $item) {
+                $owner = new Registration($item);
+                $owners[] = $owner->registration;
+            }
+            return Helpers::arrayToString($owners);
+        }
+        if (isset($this->egrn['Owner']['Right']['Owner'])) {
+            $owner = new Registration($this->egrn['Owner']['Right']);
+            return $owner->registration;
+        }
+        return false;
     }
 
-    protected function arrayToString(array $arr) :string
+    public function getOwnerEncumbrance()
     {
-        $res = '';
-        foreach ($arr as $key => $value) {
-            $res .= ($key + 1) . '. ' . $value . PHP_EOL;
+        if (isset($this->egrn['Owner']['Right']['Encumbrance'][0])) {
+            $owners = [];
+            foreach ($this->egrn['Owner']['Right']['Encumbrance'] as $item) {
+                $owner = new Encumbrance($item);
+                $owners[] = $owner->encumbrance;
+            }
+            return Helpers::arrayToString($owners);
         }
-        return $res;
+        if (isset($this->egrn['Owner']['Right']['Encumbrance'])) {
+            $owner = new Encumbrance($this->egrn['Owner']['Right']['Encumbrance']);
+            return $owner->encumbrance;
+        }
+        return false;
     }
+
+
 }

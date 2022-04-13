@@ -9,6 +9,7 @@ use Deripipka\Egrn\Realty\ObjectRealty;
 use Deripipka\Egrn\Realty\Uncompleted;
 use Mtownsend\XmlToArray\XmlToArray;
 use Deripipka\Egrn\Parcel\Parcel;
+use Deripipka\Egrn\Helpers;
 
 class EgrnFabric
 {
@@ -17,18 +18,18 @@ class EgrnFabric
         $xmlString = file_get_contents($filePath);
         $egrnArray = XmlToArray::convert($xmlString);
         if(isset($egrnArray['Realty']['Building'])) {
-            return new Building(self::addOwnerToArray('Realty', 'Building', $egrnArray));
+            return new Building(Helpers::addOwnerToArray('Realty', 'Building', $egrnArray));
         } elseif (isset($egrnArray['Realty']['Construction'])) {
-            return new Construction(self::addOwnerToArray('Realty', 'Construction', $egrnArray));
+            return new Construction(Helpers::addOwnerToArray('Realty', 'Construction', $egrnArray));
         } elseif (isset($egrnArray['Realty']['Flat'])) {
-            return new Flat(self::addOwnerToArray('Realty', 'Flat', $egrnArray));
+            return new Flat(Helpers::addOwnerToArray('Realty', 'Flat', $egrnArray));
         } elseif (isset($egrnArray['Realty']['Uncompleted'])) {
-            return new Uncompleted(self::addOwnerToArray('Realty', 'Uncompleted', $egrnArray));
+            return new Uncompleted(Helpers::addOwnerToArray('Realty', 'Uncompleted', $egrnArray));
         } elseif (isset($egrnArray['Parcels']['Parcel'])) {
             $egrnArray['Parcels']['Parcel']['Address'] = $egrnArray['Parcels']['Parcel']['Location']['Address'];
-            return new Parcel(self::addOwnerToArray('Parcels', 'Parcel', $egrnArray));
+            return new Parcel(Helpers::addOwnerToArray('Parcels', 'Parcel', $egrnArray));
         } elseif (isset($egrnArray['Object'])) {
-            return new ObjectRealty(self::addOwnerToArray('Object', null, $egrnArray));
+            return new ObjectRealty(Helpers::addOwnerToArray('Object', null, $egrnArray));
         } elseif (isset($egrnArray['ReestrExtract']['ExtractObjectRight']['ExtractObject']['ObjectDesc'])) {
             $egrnArray['ReestrExtract']['ExtractObjectRight']['ExtractObject']['ObjectDesc']['Owner'] =
                 $egrnArray['ReestrExtract']['ExtractObjectRight']['ExtractObject']['Owner'];
@@ -37,14 +38,5 @@ class EgrnFabric
         return false;
     }
 
-    private static function addOwnerToArray(string $key1, $key2, array $arr) : array
-    {
-        if($key2 !== null) {
-            $arr[$key1][$key2]['Owner'] = $arr['ReestrExtract']['ExtractObjectRight']['ExtractObject']['ObjectRight'] ?? '';
-            return $arr[$key1][$key2];
-        } else {
-            $arr[$key1]['Owner'] = $arr['ReestrExtract']['ExtractObjectRight']['ExtractObject']['ObjectRight'] ?? '';
-            return $arr[$key1];
-        }
-    }
+
 }

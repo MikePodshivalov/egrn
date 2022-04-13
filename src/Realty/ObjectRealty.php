@@ -2,7 +2,9 @@
 
 namespace Deripipka\Egrn\Realty;
 
+use Deripipka\Egrn\Helpers;
 use Deripipka\Egrn\Owners\OwnerFabric;
+use Deripipka\Egrn\Owners\Registration;
 
 class ObjectRealty extends EgrnRealty
 {
@@ -26,19 +28,33 @@ class ObjectRealty extends EgrnRealty
         }
     }
 
-    public function getOwner()
+    public function getOwnerName()
+    {
+        if (isset($this->egrn[0])) {
+            $owners = [];
+            foreach ($this->egrn as $item) {
+                $owner = OwnerFabric::create($item);
+                $owners[] = $owner->name;
+            }
+            return Helpers::arrayToString($owners);
+        }
+            $owner = OwnerFabric::create($this->egrn);
+            return $owner->name;
+    }
+
+    public function getOwnerRegistration()
     {
         if (isset($this->egrn['Owner'][0])) {
             $owners = [];
             foreach ($this->egrn['Owner'] as $item) {
-                $owner = OwnerFabric::create($item);
-                $owners[] = $this->assembleString($owner);
+                $owner = new Registration($item);
+                $owners[] = $owner->registration;
             }
-            return $this->arrayToString($owners);
+            return Helpers::arrayToString($owners);
         }
         if (isset($this->egrn['Owner'])) {
-            $owner = OwnerFabric::create($this->egrn);
-            return $this->assembleString($owner);
+            $owner = new Registration($this->egrn['Owner']);
+            return $owner->registration;
         }
         return false;
     }
