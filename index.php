@@ -26,7 +26,7 @@ $n = 0;
 foreach ($content as $file => $item) {
     echo '<pre>';
     echo $file . '<br>';
-    echo $item->getOwnerEncumbrance();
+    print_r($item->getAll());
     echo '</pre>';
     echo '-------------------------------------------<br>';
     $n++;

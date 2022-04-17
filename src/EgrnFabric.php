@@ -13,6 +13,12 @@ use Deripipka\Egrn\Helpers;
 
 class EgrnFabric
 {
+    /**
+     * Статический метод - фабрика, конвертирует xml в array и создает экземпляр необходимого класса в зависимости от
+     * типа недвижимости
+     * @param string $filePath
+     * @return Parcel|Building|Construction|Flat|ObjectRealty|Uncompleted|false
+     */
     public static function create(string $filePath)
     {
         $xmlString = file_get_contents($filePath);

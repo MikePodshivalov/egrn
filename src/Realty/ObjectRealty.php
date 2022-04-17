@@ -13,6 +13,11 @@ class ObjectRealty extends EgrnRealty
         return $this->egrn['CadastralNumber'] ?? '';
     }
 
+    public function getDateCreated() : string
+    {
+        return $this->egrn['DateCreated'] ?? '';
+    }
+
     public function getAddress() : string
     {
         return $this->egrn['Address']['Content'] ?? parent::getAddress();

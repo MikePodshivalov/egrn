@@ -4,7 +4,12 @@ namespace Deripipka\Egrn;
 
 abstract class Helpers
 {
-    static public function arrayToString(array|string $elem) :string
+    /**
+     * Статический метод преобразует массив однотипных данных в строку
+     * @param array|string $elem
+     * @return string
+     */
+    static public function arrayToString(array|string $elem) : string
     {
         $res = '';
         if (is_array($elem)) {
@@ -20,6 +25,11 @@ abstract class Helpers
 
     }
 
+    /**
+     * Статический метод парсит адрес объеекта недвижимости
+     * @param array $arr
+     * @return string
+     */
     static public function parseAddress(array $arr) : string
     {
         if (isset($arr['Address']['adrs:Note'])) {
@@ -64,6 +74,12 @@ abstract class Helpers
         }
     }
 
+    /**
+     * @param string $key1
+     * @param $key2
+     * @param array $arr
+     * @return array
+     */
     static public function addOwnerToArray(string $key1, $key2, array $arr) : array
     {
         if($key2 !== null) {
