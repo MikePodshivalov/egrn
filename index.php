@@ -20,24 +20,13 @@ foreach($files as $file) {
 foreach ($egrn as $file) {
     $content[$file] = EgrnFabric::create($path . $file);
 }
+
 $n = 0;
 
-//echo '<pre>';
-//print_r($content['obj_f7d481f9-fab8-4422-b7d0-ecbd415d5105.xml']->egrn);
-//echo '</pre>';
-
-
-
 foreach ($content as $file => $item) {
-//    echo $item->getType() . '*******' . $item->getAssignationName() . '*******' . $file . '<br>';
     echo '<pre>';
     echo $file . '<br>';
-//    if (get_class($item) == 'Deripipka\Egrn\Realty\ObjectRealty') {
-//        echo '<pre>';
-//        print_r($item);
-//        echo '</pre>';
-//    }
-    echo $item->getOwnerRegistration();
+    echo $item->getOwnerEncumbrance();
     echo '</pre>';
     echo '-------------------------------------------<br>';
     $n++;

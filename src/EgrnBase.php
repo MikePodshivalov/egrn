@@ -61,6 +61,9 @@ abstract class EgrnBase
 
     public function getName() : string
     {
+        if (isset($this->egrn['Name']) && $this->egrn['Name'] === '01') {
+            return '';
+        }
         return $this->egrn['Name'] ?? '';
     }
 
@@ -95,7 +98,7 @@ abstract class EgrnBase
             $owners = [];
             foreach ($this->egrn['Owner']['Right'] as $item) {
                 $owner = OwnerFabric::create($item);
-                $owners[] = $owner->name;
+                $owners[] = $owner->name ?? '';
             }
             return Helpers::arrayToString($owners);
         }

@@ -6,7 +6,7 @@ class Organization
 {
     public string $name = '';
 
-    public function __construct(public array $owner)
+    public function __construct(private array $owner)
     {
         if(isset($this->owner['Owner']['Organization']['Content'])) {
             $this->name .= $this->owner['Owner']['Organization']['Content'];
